@@ -3,8 +3,7 @@ require 'date'
 <!DOCTYPE html>
 <html>
   <body>
-    <% today = Date.today.strftime %>
-    <h1><%=The date is #{today}%></h1>
-    <%end%>
+    <h1>Today</h1>
+    <p>The date is <%= Time.now.strftime("%A, %B %d, %Y") %></p>
   </body>
 </html>
